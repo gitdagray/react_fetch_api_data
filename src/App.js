@@ -30,9 +30,8 @@ function App() {
         setIsLoading(false);
       }
     }
-    setTimeout(() => {
-      (async () => await fetchItems())();
-    }, 2000)
+
+    setTimeout(() => fetchItems(), 2000);
 
   }, [])
 
